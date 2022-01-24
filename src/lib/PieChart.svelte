@@ -32,6 +32,8 @@
       })
       .attr("d", arc);
   })
+
+
 </script>
 
 <svg height={height} width={width} bind:this={chart}/>
