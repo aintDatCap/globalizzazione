@@ -1,28 +1,28 @@
 <script lang="ts">
-  import {
-    Collapse,
-    Navbar,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-  } from 'sveltestrap';
-
-
+	import { Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink, Icon } from 'sveltestrap';
+	import Sidebar from '$lib/Sidebar.svelte';
+	let toggle_sidebar = false;
 </script>
 
 <Navbar color="light" light expand="md">
-  <NavbarBrand href="/">Globalizzazione</NavbarBrand>
-  <Collapse  navbar expand="md">
-    <Nav class="ms-auto" navbar>
-      <NavItem>
-        <NavLink href="/credits">Credits</NavLink>
-      </NavItem>
+	<NavbarBrand href="/" on:click={() => toggle_sidebar=!toggle_sidebar}>Globalizzazione</NavbarBrand>
+	<Collapse navbar expand="md">
+		<Nav class="ms-auto" navbar>
+			<NavItem>
+				<NavLink href="/credits">Credits</NavLink>
+			</NavItem>
 
-      <NavItem>
-        <NavLink href="https://github.com/bestguy/sveltestrap">GitHub</NavLink>
-      </NavItem>
+			<NavItem>
+				<NavLink href="https://github.com/yrenum/globalizzazione">
+					GitHub
+					<Icon name="github" />
+				</NavLink>
 
-    </Nav>
-  </Collapse>
+			</NavItem>
+
+		</Nav>
+	</Collapse>
 </Navbar>
+{#if toggle_sidebar}
+	<Sidebar />
+{/if}
