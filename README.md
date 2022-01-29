@@ -4,6 +4,7 @@
 
 ```
 git clone https://github.com/yrenum/globalizzazione
+cd globalizzazione
 npm i
 npm run dev
 ```
