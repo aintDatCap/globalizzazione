@@ -1,16 +1,23 @@
 <script lang="ts">
-	import { Nav, NavItem } from 'sveltestrap';
+	import { Nav } from 'sveltestrap';
 </script>
 
 <style>
 	a {
 		text-decoration: none;
 		color: black;
-		margin-left: 1em;
+		margin-left: 10px;
 		font-size: 17px;
 		width: 100%;
 		height: 100%;
 	}
+	.navitem {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	/*
+		Pallette da modificare
+	*/
 	.navitem:hover {
 		background-color: #c9c9c9;
 	}
@@ -32,7 +39,7 @@
 <div id="sidebar">
 	<Nav vertical>
 		<div class="navitem">
-			<a href="/what-is-globalization">Cos'è la globalizzazione?</a>
+			<a href="report/what-is-globalization">Cos'è la globalizzazione?</a>
 		</div>
 		<div class="navitem">
 			<a href="/">Economia</a>

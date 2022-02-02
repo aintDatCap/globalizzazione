@@ -5,7 +5,11 @@
 </script>
 
 <Navbar color="light" light expand="md">
-	<NavbarBrand href="/" on:click={() => toggle_sidebar=!toggle_sidebar}>Globalizzazione</NavbarBrand>
+	<div id="list" on:click={() => toggle_sidebar=!toggle_sidebar}>
+		<Icon name="list" />
+	</div>
+	
+	<NavbarBrand href="/">Globalizzazione</NavbarBrand>
 	<Collapse navbar expand="md">
 		<Nav class="ms-auto" navbar>
 			<NavItem>
@@ -26,3 +30,10 @@
 {#if toggle_sidebar}
 	<Sidebar />
 {/if}
+
+<style>
+	#list {
+		margin-right: 1em;
+		cursor:pointer;
+	}
+</style>
