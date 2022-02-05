@@ -1,7 +1,7 @@
 <script>
-  import PieChart from "$lib/PieChart.svelte"
+  import Piechart from "$lib/Piechart.svelte"
 </script>
-<PieChart
+<Piechart
   data = {[1,3,2,6,9]}
   height = {200}
   width = {200}
