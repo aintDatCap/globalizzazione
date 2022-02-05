@@ -6,10 +6,12 @@
 	a {
 		text-decoration: none;
 		color: black;
-		margin-left: 10px;
+		margin-left: 1em;
+		margin-right: 1em;
 		font-size: 17px;
 		width: 100%;
 		height: 100%;
+		text-align: center;
 	}
 	.navitem {
 		padding-top: 1em;

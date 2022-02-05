@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
-  export let data:number[];
-  export let xRange: number[];
+	export let data: number[];
+	export let xRange: number[];
 	export let yRange: number[];
 	export let height: number;
 	export let width: number;
-  export let minX:number = 0;
-  export let minY:number = 0;
+	export let minX: number = 0;
+	export let minY: number = 0;
 
 	let chart;
 
@@ -34,11 +34,7 @@
 			.append('g')
 			.attr('transform', 'translate(50, ' + xAxisTranslate + ')')
 			.call(x_axis);
-
-    const line = d3.line()
-    .x(xRange)
-    .y(data)
-    
+		
 	});
 </script>
 
