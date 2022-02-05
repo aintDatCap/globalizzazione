@@ -39,7 +39,7 @@
 <div id="sidebar">
 	<Nav vertical>
 		<div class="navitem">
-			<a href="report/what-is-globalization">Cos'è la globalizzazione?</a>
+			<a href="/report/what-is-globalization">Cos'è la globalizzazione?</a>
 		</div>
 		<div class="navitem">
 			<a href="/">Economia</a>
