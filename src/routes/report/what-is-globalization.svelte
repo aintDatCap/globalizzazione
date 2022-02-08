@@ -12,8 +12,9 @@
 		indicare un ampio insieme di fenomeni che hanno portato ad un avvicinamento delle culture ma
 		la sua origine è più antica e alcuni studiosi pensano che derivi da un ossimoro utilizzato
 		negli anni `60 dal sociologo canadese McLuhan.
+		<img src={globalizationImg} alt="Globalization" height="200px" width="200px" />
 	</p>
-	<img src={globalizationImg} alt="Globalization" height="300px" width="300px" />
+	
 
 </article>
 
@@ -21,7 +22,7 @@
 	.description {
 		margin-left: 3em;
 		text-align: justify;
-		width:50%;
+		margin-right: 3em;
 	}
 
 	.title {
