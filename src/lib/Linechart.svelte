@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
-	export let data: number[];
+	export let data: any;
 	export let xRange: number[];
 	export let yRange: number[];
 	export let height: number;
@@ -34,7 +34,25 @@
 			.append('g')
 			.attr('transform', 'translate(50, ' + xAxisTranslate + ')')
 			.call(x_axis);
-		
+
+		svg
+			.append('path')
+			.datum(data)
+			
+			.attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 1.5)
+			.attr(
+				'd',
+				d3
+					.line()
+					.x((d) => {
+						return xscale(d.x);
+					})
+					.y((d) => {
+						return yscale(d.y);
+					})
+			);
 	});
 </script>
 
