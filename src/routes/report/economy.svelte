@@ -1,6 +1,16 @@
-<script>
+<script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
-	import graph from '$lib/assets/economic_growth_graph.png';
+	import Linechart from '$lib/Linechart.svelte'
+	import data from "$lib/data/glob_data.json"
+
+	
+	let xRange: number[] = [];
+	let yRange: number[] = [];
+	for (let i = 1900; i <= 2015; i++) xRange.push(i);
+	for (let i = 0; i <= 110; i += 10) yRange.push(i);
+
+	const glob_data = JSON.parse(JSON.stringify(data))
+
 </script>
 
 <style>
@@ -23,7 +33,6 @@
 
 		<!-- Grafico qui -->
 
-		<img src={graph} alt="graph" width="200" height="200" />
 		Citando il professor Luciano Gallino possiamo definire la globalizzazione economica come: “Il
 		processo di costruzione di un mercato a livello planetario”. Il mercato globale ha avuto un
 		grosso impulso dalle NICT (New Information and Communication Technologies) che hanno
@@ -44,4 +53,11 @@
 		e proteggere anche industrie artigianali locali che non possono competere con le grandi
 		industrie.
 	</p>
+	<Linechart
+	{xRange}
+	{yRange}
+	data={glob_data}
+	height={500}
+	width={600}
+	minX={1887} />
 </article>

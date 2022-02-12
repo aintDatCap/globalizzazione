@@ -1,5 +1,19 @@
-<script>
+<script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
+	import Linechart from '$lib/Linechart.svelte';
+	import worldGDP from '$lib/data/world_gdp.json'
+
+	let xRange: number[] = [];
+	let yRange: number[] = [];
+	let minX = 1870;
+	const worldGDP_data = JSON.parse(JSON.stringify(worldGDP))
+
+	for (let i = 1870; i < 2000; i += 10) xRange.push(i);
+	for (let i = 0; i < 40; i += 10) yRange.push(i);
+
+	let stockGDP = {
+		data: [9, 32, 4, 21]
+	};
 </script>
 
 <style>
@@ -16,7 +30,7 @@
 
 <Navbar />
 <article>
-	<h2 class="title">Cultura</h2>
+	<h2 class="title">Tecnologia</h2>
 	<p class="description">
 		Possiamo identificare il susseguirsi di tre fasi di globalizzazione dal punto di vista
 		tecnologico. La prima coincidente con la fine del XIX° secolo, la seconda con gli anni dal 1945
@@ -32,4 +46,8 @@
 		transoceanico, che della trasmissione delle informazioni via telegrafo, determinò quella
 		accelerazione nei flussi commerciali internazionali, nei movimenti di capitale
 	</p>
+
+	<!--<Linechart {xRange} {yRange} data={worldGDP_data} {minX} width={600} height={500} />-->
+
+
 </article>
