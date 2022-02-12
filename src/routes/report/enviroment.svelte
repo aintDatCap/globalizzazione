@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
+	import {Button} from "sveltestrap"
 </script>
 
 <style>
@@ -11,6 +12,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -33,3 +37,7 @@
 		genere, un miglioramento della qualità ambientale.
 	</p>
 </article>
+<div>
+	<Button href="/report/tecnology" color="primary" outline>&#8592; Tecnologia</Button>
+	<Button href="/report/covid" color="primary" outline>Covid &#8594;</Button>
+</div>

@@ -2,6 +2,7 @@
 	import Navbar from '$lib/navbar.svelte';
 	import Linechart from '$lib/Linechart.svelte';
 	import worldGDP from '$lib/data/world_gdp.json'
+	import {Button} from "sveltestrap"
 
 	let xRange: number[] = [];
 	let yRange: number[] = [];
@@ -25,6 +26,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -51,3 +55,7 @@
 
 
 </article>
+<div>
+	<Button href="/report/migration" color="primary" outline>&#8592; Migrazione</Button>
+	<Button href="/report/enviroment" color="primary" outline>Ambiente &#8594;</Button>
+</div>

@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
+	import {Button} from "sveltestrap"
 </script>
 
 <style>
@@ -11,6 +12,10 @@
 
 	.title {
 		margin-left: 1em;
+	}
+
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -35,3 +40,7 @@
 		migratori: i nuovi poveri hanno cercato fortuna all’interno di altri Stati.
 	</p>
 </article>
+<div>
+	<Button href="/report/economy"  color="primary" outline>&#8592; Cultura</Button>
+	<Button href="/report/tecnology"  color="primary" outline>Tecnologia &#8594;</Button>
+</div>

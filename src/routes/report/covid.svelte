@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
+	import {Button} from "sveltestrap"
 </script>
 
 <style>
@@ -11,6 +12,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -36,3 +40,7 @@
 		esistono diversi siti che permettono ai giovani di cercare lavori e stage all’estero.
 	</p>
 </article>
+<div>
+	<Button href="/report/enviroment" color="primary" outline>&#8592; Ambiente</Button>
+
+</div>

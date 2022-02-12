@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
+	import {Button} from "sveltestrap"
 </script>
 
 <style>
@@ -11,6 +12,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -38,3 +42,7 @@
 		demonizzare ciò che arriva dall’estero devono integrarla, senza annullare la propria identità.
 	</p>
 </article>
+<div>
+	<Button href="/report/economy"  color="primary" outline>&#8592; Economia</Button>
+	<Button href="/report/migration"  color="primary" outline>Migrazione &#8594;</Button>
+</div>

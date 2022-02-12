@@ -2,7 +2,7 @@
 	import Navbar from '$lib/navbar.svelte';
 	import Linechart from '$lib/Linechart.svelte'
 	import data from "$lib/data/glob_data.json"
-
+	import {Button} from "sveltestrap"
 	
 	let xRange: number[] = [];
 	let yRange: number[] = [];
@@ -22,6 +22,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -61,3 +64,7 @@
 	width={600}
 	minX={1887} />
 </article>
+<div>
+	<Button href="/report/what-is-globalization" class="arrow" color="primary" outline>&#8592; Cos'è la globalizzazione</Button>
+	<Button href="/report/culture" class="arrow" color="primary" outline>Cultura &#8594;</Button>
+</div>

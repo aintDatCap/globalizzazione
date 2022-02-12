@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
 	import globalizationImg from '$lib/assets/globalization.png';
+	import {Button} from "sveltestrap"
 </script>
 
 <style>
@@ -12,6 +13,9 @@
 
 	.title {
 		margin-left: 1em;
+	}
+	div {
+		text-align: center;
 	}
 </style>
 
@@ -35,3 +39,6 @@
 		<img src={globalizationImg} alt="Globalization" height="200px" width="200px" />
 	</p>
 </article>
+<div>
+	<Button href="/report/economy" class="arrow" color="primary" outline>Economia &#8594;</Button>
+</div>
