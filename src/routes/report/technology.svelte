@@ -1,20 +1,16 @@
 <script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
 	import Linechart from '$lib/Linechart.svelte';
-	import worldGDP from '$lib/data/world_gdp.json'
-	import {Button} from "sveltestrap"
+	import worldGDP from '$lib/data/world_gdp.json';
+	import { Button } from 'sveltestrap';
 
 	let xRange: number[] = [];
 	let yRange: number[] = [];
-	let minX = 1870;
-	const worldGDP_data = JSON.parse(JSON.stringify(worldGDP))
 
-	for (let i = 1870; i < 2000; i += 10) xRange.push(i);
-	for (let i = 0; i < 40; i += 10) yRange.push(i);
+	const worldGDP_data = JSON.parse(JSON.stringify(worldGDP));
 
-	let stockGDP = {
-		data: [9, 32, 4, 21]
-	};
+	for (let i = 1870; i <= 2000; i += 10) xRange.push(i);
+	for (let i = 0; i <= 40; i += 10) yRange.push(i);
 </script>
 
 <style>
@@ -51,8 +47,13 @@
 		accelerazione nei flussi commerciali internazionali, nei movimenti di capitale
 	</p>
 
-	<!--<Linechart {xRange} {yRange} data={worldGDP_data} {minX} width={600} height={500} />-->
-
+	<Linechart 
+		{xRange} 
+		{yRange} 
+		data={worldGDP_data} 
+		minX={1855} 
+		width={600} 
+		height={500} />
 
 </article>
 <div>
