@@ -13,8 +13,12 @@
 	.title {
 		margin-left: 1em;
 	}
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
 	}
 </style>
 
@@ -37,7 +41,7 @@
 		genere, un miglioramento della qualità ambientale.
 	</p>
 </article>
-<div>
+<footer>
 	<Button href="/report/technology" color="primary" outline>&#8592; Tecnologia</Button>
 	<Button href="/report/covid" color="primary" outline>Covid &#8594;</Button>
-</div>
+</footer>

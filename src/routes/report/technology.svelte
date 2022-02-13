@@ -24,8 +24,12 @@
 	.title {
 		margin-left: 1em;
 	}
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
 	}
 </style>
 
@@ -52,7 +56,7 @@
 	<Linechart {xRange} {yRange} data={stockGDP_data} minX={1855} width={600} height={500} />
 
 </article>
-<div>
+<footer>
 	<Button href="/report/migration" color="primary" outline>&#8592; Migrazione</Button>
 	<Button href="/report/enviroment" color="primary" outline>Ambiente &#8594;</Button>
-</div>
+</footer>

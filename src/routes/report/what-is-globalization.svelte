@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import {Button} from "sveltestrap"
+	import { Button } from 'sveltestrap';
+	import footerStyle from "$lib/assets/footer_style.svg"
 </script>
 
 <style>
@@ -13,8 +14,17 @@
 	.title {
 		margin-left: 1em;
 	}
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
+	}
+	.svg {
+		bottom: 0;
+		margin:0;
+		right: 0;
 	}
 </style>
 
@@ -36,7 +46,11 @@
 		i continenti, organizzazione della vita sociale su scala globale e crescita di una coscienza
 		globale condivisa.”
 	</p>
+
 </article>
-<div>
+<div class="svg"><img src={footerStyle} alt="" width="600" height="600"></div>
+
+<footer>
+	
 	<Button href="/report/economy" class="arrow" color="primary" outline>Economia &#8594;</Button>
-</div>
+</footer>

@@ -13,8 +13,12 @@
 	.title {
 		margin-left: 1em;
 	}
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
 	}
 </style>
 
@@ -42,7 +46,7 @@
 		demonizzare ciò che arriva dall’estero devono integrarla, senza annullare la propria identità.
 	</p>
 </article>
-<div>
+<footer>
 	<Button href="/report/economy"  color="primary" outline>&#8592; Economia</Button>
 	<Button href="/report/migration"  color="primary" outline>Migrazione &#8594;</Button>
-</div>
+</footer>

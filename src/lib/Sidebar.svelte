@@ -10,7 +10,7 @@
 		<a href="/report/economy"> <div class="navitem">Economia</div></a>
 		<a href="/report/culture"> <div class="navitem">Cultura</div></a>
 		<a href="/report/migration"> <div class="navitem">Migrazione</div></a>
-		<a href="/report/tecnology"> <div class="navitem">Tecnologia</div></a>
+		<a href="/report/technology"> <div class="navitem">Tecnologia</div></a>
 		<a href="/report/enviroment"> <div class="navitem">Ambiente</div></a>
 		<a href="/report/covid"> <div class="navitem">Covid</div></a>
 	</Nav>

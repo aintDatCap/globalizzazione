@@ -14,8 +14,12 @@
 		margin-left: 1em;
 	}
 
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
 	}
 </style>
 
@@ -36,11 +40,11 @@
 		tutto le aziende.investitrici. I provvedimenti presi dai governi hanno diminuito il welfare e i
 		diritti dei lavoratori e ciò ha determinato la radicalizzazione delle differenze salariali e la
 		diminuzione del ceto medio. Secondo il sociologo Ulrich Beck dopo due secoli durante i quali
-		l’Europa ha esportato manodopera, è diventata un’importante destinazione per i movimenti
+		l’Europa ha esportato manodopera, è footerentata un’importante destinazione per i movimenti
 		migratori: i nuovi poveri hanno cercato fortuna all’interno di altri Stati.
 	</p>
 </article>
-<div>
+<footer>
 	<Button href="/report/economy"  color="primary" outline>&#8592; Cultura</Button>
 	<Button href="/report/technology"  color="primary" outline>Tecnologia &#8594;</Button>
-</div>
+</footer>

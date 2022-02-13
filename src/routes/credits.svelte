@@ -3,6 +3,9 @@
 </script>
 
 <style>
+	h2 {
+		margin-left: 0.3em;
+	}
 
 </style>
 
@@ -10,50 +13,63 @@
 <span style="color:red">Da completare</span>
 
 <h2>Creatori:</h2>
-<p>Giovanni Sandri</p>
-<p>Federico Caprini</p>
+<ul>
+	<li>
+		<p>Giovanni Sandri</p>
+	</li>
+	<li>
+		<p>Federico Caprini</p>
+	</li>
+</ul>
 
 <h2>Fonti:</h2>
-
-<a
+<ul>
+<li><a
 	href="https://drive.google.com/file/d/1Fvz82-K9SkcfrC2DTSeu5v2Q1lqTxAMK/view?usp=sharing"
 	target="_blank">
 	Definizione e Cultura
-</a>
-<br>
-<a
+</a></li>
+<br />
+<li><a
 	href="https://drive.google.com/file/d/1BFVv0ukoSlAGBe8JRz-YQgDGOqp_pt0F/view?usp=sharing"
 	target="_blank">
 	Economia
-</a>
-<br>
-<a
+</a></li>
+<br />
+<li><a
 	href="https://drive.google.com/file/d/1q8X5yNcsnMLY_D_n-hYT3KKjPQ_ow0VO/view?usp=sharing"
 	target="_blank">
 	Migrazione
-</a>
-<br>
-<a
+</a></li>
+<br />
+<li><a
 	href="https://drive.google.com/file/d/1ocDXk7H-SJpQWdYmQXjckKEvhByqByO8/view?usp=sharing"
 	target="_blank">
 	Tecnologia
-</a>
-<br>
-<a
+</a></li>
+<br />
+<li><a
 	href="https://www.scienzainrete.it/contenuto/articolo/Ambiente-e-globalizzazione"
 	target="_blank">
 	Ambiente
-</a>
-<br>
-<a href="https://morethesis.unimore.it/theses/available/etd-02202021-155630/" target="_blank">
+</a></li>
+<br />
+<li><a href="https://morethesis.unimore.it/theses/available/etd-02202021-155630/" target="_blank">
 	Covid
-</a>
-
-
-
+</a></li>
+</ul>
 <h2>Strumenti:</h2>
-
-<p>Google scholar</p>
-<p>Sveltekit</p>
-<p>Sveltestrap</p>
-<p>D3.js</p>
+<ul>
+	<li>
+		<p>Google scholar</p>
+	</li>
+	<li>
+		<p>Sveltekit</p>
+	</li>
+	<li>
+		<p>Sveltestrap</p>
+	</li>
+	<li>
+		<p>D3.js</p>
+	</li>
+</ul>

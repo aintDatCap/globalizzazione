@@ -4,10 +4,13 @@
 	import econImg from '$lib/assets/index/economy.png';
 	import cultImg from '$lib/assets/index/culture.png';
 	import migrImg from '$lib/assets/index/migration.png';
+	import techImg from '$lib/assets/index/technology.png';
+	import envImg from '$lib/assets/index/enviroment.png';
+	import covImg from '$lib/assets/index/covid.png';
 	import { Carousel, CarouselControl, CarouselIndicators, CarouselItem } from 'sveltestrap';
 
 	let activeIndex = 0;
-	const images = [globImg, econImg, cultImg, migrImg];
+	const images = [globImg, econImg, cultImg, migrImg, techImg, envImg, covImg];
 	const links = [
 		'what-is-globalization',
 		'economy',

@@ -23,8 +23,16 @@
 	.title {
 		margin-left: 1em;
 	}
-	div {
+	footer {
 		text-align: center;
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		height:10%;
+	}
+
+	circle {
+		z-index: 3;
 	}
 </style>
 
@@ -64,7 +72,9 @@
 	width={600}
 	minX={1887} />
 </article>
-<div>
+
+
+<footer>
 	<Button href="/report/what-is-globalization" class="arrow" color="primary" outline>&#8592; Cos'è la globalizzazione</Button>
 	<Button href="/report/culture" class="arrow" color="primary" outline>Cultura &#8594;</Button>
-</div>
+</footer>
