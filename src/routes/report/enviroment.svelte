@@ -38,6 +38,6 @@
 	</p>
 </article>
 <div>
-	<Button href="/report/tecnology" color="primary" outline>&#8592; Tecnologia</Button>
+	<Button href="/report/technology" color="primary" outline>&#8592; Tecnologia</Button>
 	<Button href="/report/covid" color="primary" outline>Covid &#8594;</Button>
 </div>

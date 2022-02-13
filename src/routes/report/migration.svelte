@@ -42,5 +42,5 @@
 </article>
 <div>
 	<Button href="/report/economy"  color="primary" outline>&#8592; Cultura</Button>
-	<Button href="/report/tecnology"  color="primary" outline>Tecnologia &#8594;</Button>
+	<Button href="/report/technology"  color="primary" outline>Tecnologia &#8594;</Button>
 </div>
