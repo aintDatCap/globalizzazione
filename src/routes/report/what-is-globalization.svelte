@@ -1,6 +1,5 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import globalizationImg from '$lib/assets/globalization.png';
 	import {Button} from "sveltestrap"
 </script>
 
@@ -36,7 +35,6 @@
 		'globalizzazione' come diffusione mondiale delle pratiche, espansione delle relazioni attraverso
 		i continenti, organizzazione della vita sociale su scala globale e crescita di una coscienza
 		globale condivisa.”
-		<img src={globalizationImg} alt="Globalization" height="200px" width="200px" />
 	</p>
 </article>
 <div>

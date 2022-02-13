@@ -1,12 +1,13 @@
 <script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
-	import globImg from '$lib/assets/globalization.png';
+	import globImg from '$lib/assets/index/globalization.png';
 	import econImg from '$lib/assets/index/economy.png';
 	import cultImg from '$lib/assets/index/culture.png';
+	import migrImg from '$lib/assets/index/migration.png';
 	import { Carousel, CarouselControl, CarouselIndicators, CarouselItem } from 'sveltestrap';
 
 	let activeIndex = 0;
-	const images = [globImg, econImg, cultImg];
+	const images = [globImg, econImg, cultImg, migrImg];
 	const links = [
 		'what-is-globalization',
 		'economy',
@@ -16,13 +17,13 @@
 		'enviroment',
 		'covid'
 	];
-	for(let i = 0; i < links.length; i++) {
-		links[i] = "/report/"+ links[i]
+	for (let i = 0; i < links.length; i++) {
+		links[i] = '/report/' + links[i];
 	}
-	setInterval(() => {
+	/*	setInterval(() => {
 		if (activeIndex == images.length - 1) activeIndex = 0;
 		else activeIndex++;
-	}, 10000);
+	}, 10000);*/
 </script>
 
 <style>
@@ -38,6 +39,9 @@
 		height: 600px;
 		margin: auto;
 	}
+	img {
+		margin: auto;
+	}
 </style>
 
 <Navbar />
@@ -51,19 +55,20 @@
 </p>
 
 <a href={links[activeIndex]}>
-<div id="carousel">
-	<Carousel items={images} bind:activeIndex >
-		<CarouselIndicators bind:activeIndex items={images} />
+	<div id="carousel">
+		<Carousel dark items={images} bind:activeIndex>
+			
+			<CarouselIndicators bind:activeIndex items={images} />
 
-		<div class="carousel-inner">
-			{#each images as item, index}
-				<CarouselItem bind:activeIndex itemIndex={index}>
-					<img src={item} class="d-block w-100" alt={`${item} ${index + 1}`} />
-				</CarouselItem>
-			{/each}
-		</div>
-		<CarouselControl direction="prev" bind:activeIndex items={images} />
-		<CarouselControl direction="next" bind:activeIndex items={images} />
-	</Carousel>
-</div>
+			<div class="carousel-inner">
+				{#each images as item, index}
+					<CarouselItem bind:activeIndex itemIndex={index}>
+						<img src={item} width="400px" height="400px"class="d-block" alt={`${item} ${index + 1}`} />
+					</CarouselItem>
+				{/each}
+			</div>
+			<CarouselControl direction="prev" bind:activeIndex items={images} />
+			<CarouselControl direction="next" bind:activeIndex items={images} />
+		</Carousel>
+	</div>
 </a>
