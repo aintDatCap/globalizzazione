@@ -4,7 +4,7 @@
 	import worldGDP from '$lib/data/world_gdp.json';
 	import stockGDP from '$lib/data/stock_gdp.json';
 	import { Button } from 'sveltestrap';
-
+	import footerStyle from '$lib/assets/footer_style.svg';
 	let xRange: number[] = [];
 	let yRange: number[] = [];
 
@@ -26,10 +26,13 @@
 	}
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
+		position: fixed;
+		bottom: 0;
 		width: 100%;
-		height:10%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
 	}
 </style>
 
@@ -52,11 +55,14 @@
 		accelerazione nei flussi commerciali internazionali, nei movimenti di capitale
 	</p>
 
-	<Linechart {xRange} {yRange} data={worldGDP_data} minX={1855} width={600} height={500} />
-	<Linechart {xRange} {yRange} data={stockGDP_data} minX={1855} width={600} height={500} />
+	<Linechart xText="Rapporto esportazioni/PIL mondiale" {xRange} {yRange} data={worldGDP_data} minX={1855} width={600} height={500} />
+	<Linechart xText="Stock di IDE/PIL" {xRange} {yRange} data={stockGDP_data} minX={1855} width={600} height={500} />
 
 </article>
+
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
 	<Button href="/report/migration" color="primary" outline>&#8592; Migrazione</Button>
 	<Button href="/report/enviroment" color="primary" outline>Ambiente &#8594;</Button>
 </footer>
+ 

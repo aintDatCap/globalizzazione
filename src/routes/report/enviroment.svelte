@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import {Button} from "sveltestrap"
+	import { Button } from 'sveltestrap';
+	import footerStyle from '$lib/assets/footer_style.svg';
 </script>
 
 <style>
@@ -15,10 +16,13 @@
 	}
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
+		position: fixed;
+		bottom: 0;
 		width: 100%;
-		height:10%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
 	}
 </style>
 
@@ -41,6 +45,7 @@
 		genere, un miglioramento della qualità ambientale.
 	</p>
 </article>
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
 	<Button href="/report/technology" color="primary" outline>&#8592; Tecnologia</Button>
 	<Button href="/report/covid" color="primary" outline>Covid &#8594;</Button>

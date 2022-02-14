@@ -17,7 +17,7 @@
 			</NavItem>
 
 			<NavItem>
-				<NavLink href="https://github.com/yrenum/globalizzazione">
+				<NavLink target="_blank" href="https://github.com/yrenum/globalizzazione">
 					GitHub
 					<Icon name="github" />
 				</NavLink>

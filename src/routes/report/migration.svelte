@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import {Button} from "sveltestrap"
+	import { Button } from 'sveltestrap';
+	import footerStyle from '$lib/assets/footer_style.svg';
 </script>
 
 <style>
@@ -16,10 +17,13 @@
 
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
+		position: fixed;
+		bottom: 0;
 		width: 100%;
-		height:10%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
 	}
 </style>
 
@@ -44,7 +48,8 @@
 		migratori: i nuovi poveri hanno cercato fortuna all’interno di altri Stati.
 	</p>
 </article>
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
-	<Button href="/report/economy"  color="primary" outline>&#8592; Cultura</Button>
-	<Button href="/report/technology"  color="primary" outline>Tecnologia &#8594;</Button>
+	<Button href="/report/economy" color="primary" outline>&#8592; Cultura</Button>
+	<Button href="/report/technology" color="primary" outline>Tecnologia &#8594;</Button>
 </footer>

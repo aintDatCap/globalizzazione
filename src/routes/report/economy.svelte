@@ -1,16 +1,15 @@
 <script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
-	import Linechart from '$lib/Linechart.svelte'
-	import data from "$lib/data/glob_data.json"
-	import {Button} from "sveltestrap"
-	
+	import Linechart from '$lib/Linechart.svelte';
+	import data from '$lib/data/glob_data.json';
+	import { Button } from 'sveltestrap';
+	import footerStyle from '$lib/assets/footer_style.svg';
 	let xRange: number[] = [];
 	let yRange: number[] = [];
 	for (let i = 1900; i <= 2015; i++) xRange.push(i);
 	for (let i = 0; i <= 110; i += 10) yRange.push(i);
 
-	const glob_data = JSON.parse(JSON.stringify(data))
-
+	const glob_data = JSON.parse(JSON.stringify(data));
 </script>
 
 <style>
@@ -25,14 +24,16 @@
 	}
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
+		position: fixed;
+		bottom: 0;
 		width: 100%;
-		height:10%;
+		height: 10%;
 	}
-
-	circle {
-		z-index: 3;
+	#bkg_img {
+		width: 100%;
+	}
+	#gdp_chart {
+		text-align: center;
 	}
 </style>
 
@@ -43,7 +44,6 @@
 	<p class="description">
 
 		<!-- Grafico qui -->
-
 		Citando il professor Luciano Gallino possiamo definire la globalizzazione economica come: “Il
 		processo di costruzione di un mercato a livello planetario”. Il mercato globale ha avuto un
 		grosso impulso dalle NICT (New Information and Communication Technologies) che hanno
@@ -64,17 +64,24 @@
 		e proteggere anche industrie artigianali locali che non possono competere con le grandi
 		industrie.
 	</p>
-	<Linechart
-	{xRange}
-	{yRange}
-	data={glob_data}
-	height={500}
-	width={600}
-	minX={1887} />
-</article>
 
+	<div id="gdp_chart">
+		<Linechart
+			yText="PIL mondiale in bilioni di dollari US"
+			xText="Crescita del PIL mondiale negli anni"
+			{xRange}
+			{yRange}
+			data={glob_data}
+			height={500}
+			width={600}
+			minX={1887} />
+	</div>
+</article>
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 
 <footer>
-	<Button href="/report/what-is-globalization" class="arrow" color="primary" outline>&#8592; Cos'è la globalizzazione</Button>
+	<Button href="/report/what-is-globalization" class="arrow" color="primary" outline>
+		&#8592; Cos'è la globalizzazione
+	</Button>
 	<Button href="/report/culture" class="arrow" color="primary" outline>Cultura &#8594;</Button>
 </footer>

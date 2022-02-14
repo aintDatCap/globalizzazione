@@ -1,7 +1,8 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
 	import { Button } from 'sveltestrap';
-	import ICTM_graph from "$lib/assets/ictm_graph.png"
+	import ICTM_graph from '$lib/assets/ictm_graph.png';
+	import footerStyle from '$lib/assets/footer_style.svg';
 </script>
 
 <style>
@@ -16,10 +17,13 @@
 	}
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
+		position: fixed;
+		bottom: 0;
 		width: 100%;
-		height:10%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
 	}
 </style>
 
@@ -45,7 +49,8 @@
 		diversi siti che permettono ai giovani di cercare lavori e stage all’estero.
 	</p>
 </article>
-<img src={ICTM_graph} alt="">
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
+<img src={ICTM_graph} alt="" />
 <footer>
 	<Button href="/report/enviroment" color="primary" outline>&#8592; Ambiente</Button>
 </footer>

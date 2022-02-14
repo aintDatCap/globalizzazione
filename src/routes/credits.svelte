@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
+	import creditsStyle from "$lib/assets/credits_style.svg"
 </script>
 
 <style>
@@ -7,11 +8,16 @@
 		margin-left: 0.3em;
 	}
 
+	div {
+		background-image: url("$lib/assets/credits_style.svg");
+		background-repeat:no-repeat;
+		background-position: right bottom;
+		padding-bottom:50px;
+	}
 </style>
 
 <Navbar />
-<span style="color:red">Da completare</span>
-
+<div>
 <h2>Creatori:</h2>
 <ul>
 	<li>
@@ -73,3 +79,5 @@
 		<p>D3.js</p>
 	</li>
 </ul>
+
+</div>

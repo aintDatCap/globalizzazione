@@ -8,6 +8,8 @@
 	export let width: number;
 	export let minX: number = 0;
 	export let minY: number = 0;
+	export let xText: string = '';
+	export let yText: string = '';
 
 	let chart;
 
@@ -38,10 +40,10 @@
 		svg
 			.append('path')
 			.datum(data)
-			
-			.attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 1.5)
+
+			.attr('fill', 'none')
+			.attr('stroke', 'steelblue')
+			.attr('stroke-width', 1.5)
 			.attr(
 				'd',
 				d3
@@ -53,7 +55,23 @@
 						return yscale(d.y);
 					})
 			);
+
+		svg
+			.append('text')
+			.attr('transform', 'rotate(-90)')
+			.attr('y', 0)
+			.attr('x', -height / 4)
+			.attr('dy', '1em')
+			.style('text-anchor', 'middle')
+			.text(yText);
+
+		svg
+			.append('text')
+			.attr('x', width/2)
+			.attr('y',  height/2+45)
+			.style('text-anchor', 'middle')
+			.text(xText);
 	});
 </script>
 
-<svg {height} {width} bind:this={chart} />
+<svg height={height / 2 + 50} {width} bind:this={chart} />

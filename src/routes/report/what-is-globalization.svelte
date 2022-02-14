@@ -1,7 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
 	import { Button } from 'sveltestrap';
-	import footerStyle from "$lib/assets/footer_style.svg"
+	import footerStyle from '$lib/assets/footer_style.svg';
 </script>
 
 <style>
@@ -16,15 +16,13 @@
 	}
 	footer {
 		text-align: center;
-		position:fixed;
-		bottom:0;
-		width: 100%;
-		height:10%;
-	}
-	.svg {
+		position: fixed;
 		bottom: 0;
-		margin:0;
-		right: 0;
+		width: 100%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
 	}
 </style>
 
@@ -48,9 +46,9 @@
 	</p>
 
 </article>
-<div class="svg"><img src={footerStyle} alt="" width="600" height="600"></div>
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 
 <footer>
-	
+
 	<Button href="/report/economy" class="arrow" color="primary" outline>Economia &#8594;</Button>
 </footer>
