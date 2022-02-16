@@ -22,3 +22,12 @@ Per hostare la pagina localmente in modalità sviluppatore:
 npm run dev
 ```
 poi aprire una pagina browser e digitare nella barra degli indirizzi: <localhost:3000>
+
+Se invece si vuole compilare il progetto, digitare
+```
+npm run build
+```
+infine per hostarlo
+```
+node .
+```

@@ -9,6 +9,6 @@ const app = express();
 app.use(handler);
 
 app.listen(PORT, () => {
-	console.log(`Server avviato con successo sulla porta ${PORT}\n\n`);
+	console.log(`Server avviato con successo sulla porta ${PORT}\n`);
 	console.log("Per accedere al sito, digitare http://locahost su un browser");
 });
