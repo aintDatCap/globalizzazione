@@ -5,6 +5,8 @@
 	import stockGDP from '$lib/data/stock_gdp.json';
 	import { Button } from 'sveltestrap';
 	import footerStyle from '$lib/assets/footer_style.svg';
+	import immigrationChart from "$lib/assets/USA_immigrants.png"
+
 	let xRange: number[] = [];
 	let yRange: number[] = [];
 
@@ -34,6 +36,10 @@
 	#bkg_img {
 		width: 100%;
 	}
+
+	#imm_chart {
+		margin-left:auto;
+	}
 </style>
 
 <Navbar />
@@ -54,12 +60,12 @@
 		transoceanico, che della trasmissione delle informazioni via telegrafo, determinò quella
 		accelerazione nei flussi commerciali internazionali, nei movimenti di capitale
 	</p>
-
+	
 	<Linechart xText="Rapporto esportazioni/PIL mondiale" {xRange} {yRange} data={worldGDP_data} minX={1855} width={600} height={500} />
 	<Linechart xText="Stock di IDE/PIL" {xRange} {yRange} data={stockGDP_data} minX={1855} width={600} height={500} />
-
+	
 </article>
-
+<img id="imm_chart" src={immigrationChart} alt="">
 <img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
 	<Button href="/report/migration" color="primary" outline>&#8592; Migrazione</Button>
