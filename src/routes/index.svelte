@@ -7,7 +7,13 @@
 	import techImg from '$lib/assets/index/technology.png';
 	import envImg from '$lib/assets/index/enviroment.png';
 	import covImg from '$lib/assets/index/covid.png';
-	import { Carousel, CarouselControl, CarouselIndicators, CarouselItem } from 'sveltestrap';
+	import {
+		Carousel,
+		CarouselCaption,
+		CarouselControl,
+		CarouselIndicators,
+		CarouselItem
+	} from 'sveltestrap';
 
 	let activeIndex = 0;
 	const images = [globImg, econImg, cultImg, migrImg, techImg, envImg, covImg];
@@ -20,13 +26,18 @@
 		'enviroment',
 		'covid'
 	];
+	const titles = [
+		'Cosè la globalizazione?',
+		'Economia',
+		'cultura',
+		'Migrazione',
+		'Tecnologia',
+		'Ambiente',
+		'Covid'
+	];
 	for (let i = 0; i < links.length; i++) {
 		links[i] = '/report/' + links[i];
 	}
-	/*	setInterval(() => {
-		if (activeIndex == images.length - 1) activeIndex = 0;
-		else activeIndex++;
-	}, 10000);*/
 </script>
 
 <style>
@@ -45,6 +56,10 @@
 	img {
 		margin: auto;
 	}
+	h5 {
+		text-align: center;
+		color: black;
+	}
 </style>
 
 <Navbar />
@@ -60,13 +75,16 @@
 <a href={links[activeIndex]}>
 	<div id="carousel">
 		<Carousel dark items={images} bind:activeIndex>
-			
+
 			<CarouselIndicators bind:activeIndex items={images} />
 
 			<div class="carousel-inner">
 				{#each images as item, index}
 					<CarouselItem bind:activeIndex itemIndex={index}>
-						<img src={item} width="400px" height="400px"class="d-block" alt={`${item} ${index + 1}`} />
+						<img src={item} width="400px" height="400px" class="d-block" alt="" />
+						<h5>{titles[index]}</h5>
+						<br />
+						<br />
 					</CarouselItem>
 				{/each}
 			</div>

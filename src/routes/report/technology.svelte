@@ -5,7 +5,7 @@
 	import stockGDP from '$lib/data/stock_gdp.json';
 	import { Button } from 'sveltestrap';
 	import footerStyle from '$lib/assets/footer_style.svg';
-	import immigrationChart from "$lib/assets/USA_immigrants.png"
+	import immigrationChart from '$lib/assets/USA_immigrants.png';
 
 	let xRange: number[] = [];
 	let yRange: number[] = [];
@@ -38,7 +38,8 @@
 	}
 
 	#imm_chart {
-		margin-left:auto;
+		margin: auto;
+		display: block;
 	}
 </style>
 
@@ -49,7 +50,7 @@
 		Possiamo identificare il susseguirsi di tre fasi di globalizzazione dal punto di vista
 		tecnologico. La prima coincidente con la fine del XIX° secolo, la seconda con gli anni dal 1945
 		al 1980 e la terza con la fine del XX° secolo. La prima in particolare ci fa capire quanto la
-		tecnologia influisca sul questo fenomeno. Infatti intorno al 1870 si verificarono una serie di
+		tecnologia influisca sul questo fenomeno. infatti intorno al 1870 si verificarono una serie di
 		innovazioni tecnologiche cruciali per la diffusione internazionale del processo di
 		industrializzazione: la costruzione di navi più robuste e veloci, con lo scafo in ferro e
 		l’elica immersa, ridusse enormemente i tempi di navigazione; l’apertura del canale di Suez, nel
@@ -60,15 +61,28 @@
 		transoceanico, che della trasmissione delle informazioni via telegrafo, determinò quella
 		accelerazione nei flussi commerciali internazionali, nei movimenti di capitale
 	</p>
-	
-	<Linechart xText="Rapporto esportazioni/PIL mondiale" {xRange} {yRange} data={worldGDP_data} minX={1855} width={600} height={500} />
-	<Linechart xText="Stock di IDE/PIL" {xRange} {yRange} data={stockGDP_data} minX={1855} width={600} height={500} />
-	
+
+	<Linechart
+		xText="Rapporto esportazioni/PIL mondiale"
+		{xRange}
+		{yRange}
+		data={worldGDP_data}
+		minX={1855}
+		width={600}
+		height={500} />
+	<Linechart
+		xText="Stock di IDE/PIL"
+		{xRange}
+		{yRange}
+		data={stockGDP_data}
+		minX={1855}
+		width={600}
+		height={500} />
+
 </article>
-<img id="imm_chart" src={immigrationChart} alt="">
+<img id="imm_chart" src={immigrationChart} alt="" />
 <img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
 	<Button href="/report/migration" color="primary" outline>&#8592; Migrazione</Button>
 	<Button href="/report/enviroment" color="primary" outline>Ambiente &#8594;</Button>
 </footer>
- 
