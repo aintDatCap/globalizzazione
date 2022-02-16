@@ -29,7 +29,7 @@
 	const titles = [
 		'Cosè la globalizazione?',
 		'Economia',
-		'cultura',
+		'Cultura',
 		'Migrazione',
 		'Tecnologia',
 		'Ambiente',
