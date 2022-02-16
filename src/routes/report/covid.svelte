@@ -49,8 +49,9 @@
 		diversi siti che permettono ai giovani di cercare lavori e stage all’estero.
 	</p>
 </article>
-<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
+
 <img src={ICTM_graph} alt="" />
+<img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
 <footer>
 	<Button href="/report/enviroment" color="primary" outline>&#8592; Ambiente</Button>
 </footer>
