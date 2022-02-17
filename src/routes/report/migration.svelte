@@ -57,7 +57,9 @@
 		determinato la radicalizzazione delle differenze salariali e la diminuzione del ceto medio.
 		Secondo il sociologo Ulrich Beck dopo due secoli durante i quali l’Europa ha esportato
 		manodopera, è diventata un’importante destinazione per i movimenti migratori: i nuovi poveri
-		hanno cercato fortuna all’interno di altri Stati.
+		hanno cercato fortuna all’interno di altri Stati. Un modo per limitare questi effetti negativi
+		della globalizzazione potrebbe essere mandare agli stati meno sviluppati aiuti economici da
+		investire in generale nel settore del lavoro così da poter migliorare le condizioni di lavoro
 	</p>
 </article>
 <img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
