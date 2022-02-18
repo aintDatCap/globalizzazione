@@ -3,7 +3,7 @@
 ## by Giovanni sandri e Federico Caprini
 
 
-Pagina web creata come presentazione per un progetto scolastico sulla globalizzazione, sviluppata usando Svelte-kit, bootstrap, d3.js e typescript.
+Pagina web creata come presentazione per un progetto scolastico sulla globalizzazione, sviluppata usando Svelte-kit, bootstrap e typescript.
 
 ___
 ## Sviluppo

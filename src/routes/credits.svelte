@@ -102,9 +102,6 @@
 		<li>
 			<p>Sveltestrap</p>
 		</li>
-		<li>
-			<p>D3.js</p>
-		</li>
 	</ul>
 
 </div>
