@@ -1,7 +1,7 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
 	import { Button } from 'sveltestrap';
-	import ICTM_graph from '$lib/assets/ictm_graph.png';
+	import ICTM_graph from '$lib/assets/graphs/ictm_graph.png';
 	import footerStyle from '$lib/assets/footer_style.svg';
 </script>
 
