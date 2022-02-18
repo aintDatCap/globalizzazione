@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Navbar from '$lib/navbar.svelte';
 	import { Button } from 'sveltestrap';
 	import footerStyle from '$lib/assets/footer_style.svg';

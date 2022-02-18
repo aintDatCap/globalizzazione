@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink, Icon } from 'sveltestrap';
 	import Sidebar from '$lib/Sidebar.svelte';
 	let toggle_sidebar = false;

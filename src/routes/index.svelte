@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Navbar from '$lib/navbar.svelte';
 	import globImg from '$lib/assets/index/globalization.png';
 	import econImg from '$lib/assets/index/economy.png';
@@ -9,7 +9,6 @@
 	import covImg from '$lib/assets/index/covid.png';
 	import {
 		Carousel,
-		CarouselCaption,
 		CarouselControl,
 		CarouselIndicators,
 		CarouselItem

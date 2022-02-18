@@ -1,6 +1,5 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import creditsStyle from '$lib/assets/credits_style.svg';
 </script>
 
 <style>
