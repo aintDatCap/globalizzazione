@@ -31,7 +31,6 @@
   "type": "module",
   "dependencies": {
     "bootstrap-icons": "^1.8.0",
-    "d3": "^7.3.0",
     "express": "^4.17.2",
     "sveltestrap": "^5.7.0"
   }

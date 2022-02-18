@@ -47,6 +47,8 @@
 		all’era dove tutto è a portata di un click. La globalizzazione a livello economico ha portato
 		diversi benefici alla maggior parte degli Stati come ad esempio un arricchimento generale e la
 		possibilità di avere tutti i prodotti in ogni periodo dell’anno.
+		<br>
+		La globalizzazione economica porta però ai seguenti aspetti negativi:
 	</p>
 
 	<ul>
