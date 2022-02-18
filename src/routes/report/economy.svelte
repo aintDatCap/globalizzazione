@@ -1,16 +1,38 @@
 <script lang="ts">
 	import Navbar from '$lib/navbar.svelte';
-	import Linechart from '$lib/Linechart.svelte';
-	import data from '$lib/data/glob_data.json';
+
 	import { Button } from 'sveltestrap';
 	import footerStyle from '$lib/assets/footer_style.svg';
-	let xRange: number[] = [];
-	let yRange: number[] = [];
-	for (let i = 1900; i <= 2015; i++) xRange.push(i);
-	for (let i = 0; i <= 110; i += 10) yRange.push(i);
-
-	const glob_data = JSON.parse(JSON.stringify(data));
+	import gdpGraph from '$lib/assets/graphs/global_pil_graph.png';
 </script>
+
+<style>
+	.description {
+		margin-left: 3em;
+		text-align: justify;
+		margin-right: 3em;
+	}
+
+	.title {
+		margin-left: 1em;
+	}
+	footer {
+		text-align: center;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 10%;
+	}
+	#bkg_img {
+		width: 100%;
+	}
+	#gdp_chart {
+		text-align: center;
+	}
+	ul {
+		margin-left: 4em;
+	}
+</style>
 
 <Navbar />
 
@@ -48,16 +70,7 @@
 	</p>
 
 	<div id="gdp_chart">
-		<Linechart
-			yText="PIL mondiale in bilioni di dollari US"
-			xText="Crescita del PIL mondiale negli anni"
-			{xRange}
-			{yRange}
-			data={glob_data}
-			height={500}
-			width={600}
-			minX={1887}
-		/>
+		<img src={gdpGraph} alt="" />
 	</div>
 </article>
 <img id="bkg_img" src={footerStyle} alt="" width="600" height="600" />
@@ -68,31 +81,3 @@
 	</Button>
 	<Button href="/report/culture" class="arrow" color="primary" outline>Cultura &#8594;</Button>
 </footer>
-
-<style>
-	.description {
-		margin-left: 3em;
-		text-align: justify;
-		margin-right: 3em;
-	}
-
-	.title {
-		margin-left: 1em;
-	}
-	footer {
-		text-align: center;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		height: 10%;
-	}
-	#bkg_img {
-		width: 100%;
-	}
-	#gdp_chart {
-		text-align: center;
-	}
-	ul {
-		margin-left: 4em;
-	}
-</style>
