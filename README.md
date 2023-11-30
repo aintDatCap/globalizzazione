@@ -1,9 +1,9 @@
 # Report sulla globalizzazione
 
-## by Giovanni sandri e Federico Caprini
+## by Giovanni Sandri e Federico Caprini
 
 
-Pagina web creata come presentazione per un progetto scolastico sulla globalizzazione, sviluppata usando Svelte-kit e bootstrap (sveltestrap)
+Pagina web creata come presentazione per un progetto scolastico sulla globalizzazione, sviluppata usando Svelte-kit e sveltestrap
 
 ___
 ## Sviluppo
